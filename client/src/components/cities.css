@@ -1,0 +1,34 @@
+.cities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  margin-top: 1vw;
+}
+
+.city-card {
+  width: 40%;
+  border: 1 solid #ddd;
+  padding: 1vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 3vw;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-image {
+  width: 66%;
+  height: auto;
+  border-radius: 0.8vw;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
