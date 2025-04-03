@@ -7,12 +7,17 @@ const router = express.Router();
 /* ************************************************************************* */
 
 // Define item-related routes
-import itemActions from "./modules/item/itemActions";
+import eventActions from "./modules/event/eventActions";
 
-router.get("/api/items", itemActions.browse);
-router.get("/api/items/:id", itemActions.read);
-router.post("/api/items", itemActions.add);
+router.get("/api/event", eventActions.browse); // récupére tous les events
+router.get("/api/event/:id", eventActions.read); // récupére event par id
+router.post("/api/event", eventActions.create); // new event
+router.put("/api/event/:id", eventActions.update); // maj event
+router.delete("/api/event/:id", eventActions.deleteEvent); // supprime event
 
+import citieActions from "./modules/event/citie/citieActions";
+
+router.get("/api/cities", citieActions.browse);
 /* ************************************************************************* */
 
 export default router;

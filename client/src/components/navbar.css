@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.nav-item {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
